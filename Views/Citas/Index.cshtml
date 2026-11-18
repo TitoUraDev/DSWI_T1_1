@@ -1,0 +1,2 @@
+@model IReadOnlyList<CitaDto>
+@{ViewData["Title"]="Citas";}<h1>Citas</h1><a class="btn btn-primary mb-3" asp-action="Create">Nueva cita</a><table class="table table-striped"><thead><tr><th>ID</th><th>Fecha</th><th>Hora</th><th>Especialidad</th><th>Estado</th><th>Paciente</th><th></th></tr></thead><tbody>@foreach(var c in Model){<tr><td>@c.CitaID</td><td>@c.Fecha?.ToString("dd/MM/yyyy")</td><td>@c.Hora</td><td>@c.Especialidad</td><td>@c.Estado</td><td>@c.NombrePaciente</td><td><a asp-action="Edit" asp-route-id="@c.CitaID">Editar</a></td></tr>}</tbody></table>

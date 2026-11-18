@@ -1,0 +1,1 @@
+using System.ComponentModel.DataAnnotations; namespace DSWI_T1_1.Dtos; public class PacienteDto { public int PacienteID{get;set;} [Required,StringLength(100)] public string Nombre{get;set;}=string.Empty; [Required,StringLength(20)] public string DNI{get;set;}=string.Empty; }

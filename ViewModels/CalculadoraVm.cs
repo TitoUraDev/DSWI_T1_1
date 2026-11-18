@@ -1,0 +1,1 @@
+namespace DSWI_T1_1.ViewModels;public class CalculadoraVm{public PrestamoVm Prestamo{get;set;}=new();public EnvioVm Envio{get;set;}=new();}

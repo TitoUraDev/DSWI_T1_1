@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.Mvc;namespace DSWI_T1_1.Controllers;public class HomeController:Controller{public IActionResult Index()=>View();}

@@ -1,0 +1,1 @@
+using System.ComponentModel.DataAnnotations;namespace DSWI_T1_1.ViewModels;public class PrestamoVm{[Range(typeof(decimal),"0.01","999999999")] [Display(Name="Monto del préstamo ($)")]public decimal Monto{get;set;}public int? Cuotas{get;set;}public decimal? Tasa{get;set;}public decimal? Interes{get;set;}public decimal? Total{get;set;}public decimal? Cuota{get;set;}}

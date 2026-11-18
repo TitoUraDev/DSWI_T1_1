@@ -1,0 +1,2 @@
+@model IReadOnlyList<PacienteDto>
+@{ViewData["Title"]="Pacientes";}<h1>Pacientes</h1><a class="btn btn-primary mb-3" asp-action="Create">Nuevo paciente</a><table class="table table-striped"><thead><tr><th>ID</th><th>Nombre</th><th>DNI</th><th></th></tr></thead><tbody>@foreach(var p in Model){<tr><td>@p.PacienteID</td><td>@p.Nombre</td><td>@p.DNI</td><td><a asp-action="Edit" asp-route-id="@p.PacienteID">Editar</a></td></tr>}</tbody></table>

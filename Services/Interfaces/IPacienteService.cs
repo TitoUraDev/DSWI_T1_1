@@ -1,0 +1,1 @@
+using DSWI_T1_1.Dtos;namespace DSWI_T1_1.Services.Interfaces;public interface IPacienteService{Task<IReadOnlyList<PacienteDto>> ObtenerTodosAsync();Task<PacienteDto?> ObtenerPorIdAsync(int id);Task<int> CrearAsync(PacienteDto d);Task<bool> EditarAsync(PacienteDto d);}

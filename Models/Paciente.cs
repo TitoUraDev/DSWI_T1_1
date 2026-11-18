@@ -1,0 +1,1 @@
+namespace DSWI_T1_1.Models; public class Paciente { public int PacienteID{get;set;} public string? Nombre{get;set;} public string? DNI{get;set;} public ICollection<Cita> Citas{get;set;}=new List<Cita>(); }

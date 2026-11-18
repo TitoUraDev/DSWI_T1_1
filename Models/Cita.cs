@@ -1,0 +1,1 @@
+namespace DSWI_T1_1.Models; public class Cita { public int CitaID{get;set;} public DateTime? Fecha{get;set;} public TimeSpan? Hora{get;set;} public string? Especialidad{get;set;} public string? Estado{get;set;} public int? PacienteID{get;set;} public Paciente? Paciente{get;set;} }

@@ -1,0 +1,1 @@
+using DSWI_T1_1.Models; namespace DSWI_T1_1.Repositories.Interfaces; public interface ICitaRepository { Task<IReadOnlyList<Cita>> ObtenerTodosAsync(); Task<Cita?> ObtenerPorIdAsync(int id); Task<int> CrearAsync(Cita c); Task<bool> EditarAsync(Cita c); }

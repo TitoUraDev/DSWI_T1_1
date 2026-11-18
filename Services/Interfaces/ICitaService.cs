@@ -1,0 +1,1 @@
+using DSWI_T1_1.Dtos;namespace DSWI_T1_1.Services.Interfaces;public interface ICitaService{Task<IReadOnlyList<CitaDto>> ObtenerTodosAsync();Task<CitaDto?> ObtenerPorIdAsync(int id);Task<int> CrearAsync(CitaDto d);Task<bool> EditarAsync(CitaDto d);}

@@ -1,0 +1,4 @@
+servidor: PC11\S19
+BD:	ClinicaBD
+usuario:	USCLINICA
+clave:	U*26_g1

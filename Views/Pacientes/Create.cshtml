@@ -1,0 +1,2 @@
+@model PacienteDto
+@{ViewData["Title"]="Nuevo paciente";}<h1>Registrar paciente</h1><form asp-action="Create" method="post" class="form-card"><div asp-validation-summary="ModelOnly" class="text-danger"></div><label asp-for="Nombre"></label><input asp-for="Nombre" class="form-control mb-2"/><span asp-validation-for="Nombre" class="text-danger"></span><label asp-for="DNI"></label><input asp-for="DNI" class="form-control mb-3"/><span asp-validation-for="DNI" class="text-danger"></span><button class="btn btn-primary">Guardar</button> <a asp-action="Index">Volver</a></form>

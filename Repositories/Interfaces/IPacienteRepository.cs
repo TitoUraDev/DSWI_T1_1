@@ -1,0 +1,1 @@
+using DSWI_T1_1.Models; namespace DSWI_T1_1.Repositories.Interfaces; public interface IPacienteRepository { Task<IReadOnlyList<Paciente>> ObtenerTodosAsync(); Task<Paciente?> ObtenerPorIdAsync(int id); Task<int> CrearAsync(Paciente p); Task<bool> EditarAsync(Paciente p); }
