@@ -1,0 +1,8 @@
+@model CitaFormViewModel
+@{
+    ViewData["Title"] = "Nueva cita";
+}
+<h2>Nueva cita</h2>
+<form asp-action="Create" method="post" class="col-md-6">
+    <partial name="_Form" model="Model" />
+</form>

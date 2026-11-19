@@ -1,0 +1,29 @@
+@model PrestamoViewModel
+@{
+    ViewData["Title"] = "Préstamos";
+}
+<h2>Cálculo de cuotas de préstamo</h2>
+
+<form asp-action="Index" method="post" class="row g-3 my-3">
+    <div class="col-md-4">
+        <label asp-for="Monto" class="form-label"></label>
+        <input asp-for="Monto" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="Monto" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </div>
+</form>
+
+@if (Model.Resultado is { } r)
+{
+    <div class="card card-resultado">
+        <div class="card-body">
+            <p class="mb-1"><strong>Monto:</strong> $ @r.Monto.ToString("N2")</p>
+            <p class="mb-1"><strong>Interés aplicado:</strong> @((r.TasaInteres * 100).ToString("0"))%</p>
+            <p class="mb-1"><strong>Total con interés:</strong> $ @r.TotalConInteres.ToString("N2")</p>
+            <p class="mb-1"><strong>Número de cuotas:</strong> @r.Cuotas</p>
+            <p class="mb-0 fs-5"><strong>Valor de cada cuota:</strong> $ @r.ValorCuota.ToString("N2")</p>
+        </div>
+    </div>
+}

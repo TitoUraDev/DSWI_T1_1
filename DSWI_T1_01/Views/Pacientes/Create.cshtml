@@ -1,0 +1,8 @@
+@model PacienteFormViewModel
+@{
+    ViewData["Title"] = "Nuevo paciente";
+}
+<h2>Nuevo paciente</h2>
+<form asp-action="Create" method="post" class="col-md-6">
+    <partial name="_Form" model="Model" />
+</form>
